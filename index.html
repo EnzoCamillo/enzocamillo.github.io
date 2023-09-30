@@ -1,1 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal</title>
 
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body{
+            background-color: rgb(187, 187, 187);
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">   
+                <nav id="navbar" class="navbar navbar-dark navbar-expand-lg fixed-top" style="background-color: black;">
+                    <a href="#" class="navbar-brand" style="text-align: center; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">&nbsp;&nbsp;Menu&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;Principal&nbsp;&nbsp;</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav1">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-between" id="nav1">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Adivinha Imagem&nbsp;&nbsp;</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#quizz" class="nav-link">Quizz&nbsp;&nbsp;</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#1_31" class="nav-link">Números 1 a 31&nbsp;&nbsp;</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" id="adiv" data-toggle="dropdown">Adivinha Número</a>
+
+                                <div class="dropdown-menu">
+                                    <a href="#adv_f" class="dropdown-item">Fácil</a>
+                                    <a href="#adv_m" class="dropdown-item">Médio</a>
+                                    <a href="#adv_i" class="dropdown-item">Intermediário</a>
+                                    <a href="#adv_d" class="dropdown-item">Difícil</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#tibetano" class="nav-link">Teste Tibetano&nbsp;&nbsp;</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#desen" class="nav-link">Desenvolvedores&nbsp;&nbsp;</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <br><br><br><br><br>
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-10">
+                <div class="card">
+                    <h1 class="card-title" style="text-align: center;">Adivinha Imagem</h1>
+                    <h4 class="card-subtitle text-muted" style="text-align: center;">Este jogo consiste na adivinhação de uma carta escolhida pelo usuário.</h3><br>
+                    <img src="Imagens/fundo_adv_i.jpeg" class="img-thumbnail rounded mx-auto d-block" style=" width: 600px; height: 410px;"><br>
+                    <a href="Jogos/adivinha_imagem.html" class="btn btn-dark btn-lg" id="quizz">JOGAR</a>
+                </div>
+            </div>
+        </div>
+        <br><br><br>
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-10">
+                <div class="card">
+                    <h1 class="card-title" style="text-align: center;">QUIZZ</h1>
+                    <h4 class="card-subtitle text-muted" style="text-align: center;">Este jogo consiste em perguntas simples com repostas de alternativa.</h3><br>
+                    <img src="Imagens/fundo_quizz.jpeg" class="img-thumbnail rounded mx-auto d-block" style=" width: 600px; height: 410px;"><br>
+                    <a href="Jogos/quizz.html" class="btn btn-dark btn-lg" id="1_31">JOGAR</a>
+                </div>
+            </div>
+        </div>
+        <br><br><br>
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-10">
+                <div class="card">
+                    <h1 class="card-title" style="text-align: center;">Números 1 a 31</h1>
+                    <h4 class="card-subtitle text-muted" style="text-align: center;">Este jogo consiste na adivinhação de um número escolhido pelo usuário.</h3><br>
+                    <img src="Imagens/fundo_1_31.jpeg" class="img-thumbnail rounded mx-auto d-block" style=" width: 600px; height: 410px;"><br>
+                    <a href="Jogos/N_1_31.html" class="btn btn-dark btn-lg" id="adv_f">JOGAR</a>
+                </div>
+            </div>
+        </div>
+        <br><br><br>
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-10">
+                <div class="card" >
+                    <h1 class="card-title" style="text-align: center;">Adivinha Número: Fácil</h1>
+                    <h4 class="card-subtitle text-muted" style="text-align: center;">Este jogo consiste no usuário adivinhar um número. Fácil.</h3><br>
+                    <img src="Imagens/fundo_adv_n.jpeg" class="img-thumbnail rounded mx-auto d-block" style=" width: 600px; height: 410px;"><br>
+                    <a href="Jogos/Adivinha_Número/adv_facil.html" class="btn btn-dark btn-lg" id="adv_m">JOGAR</a>
+                </div>
+            </div>
+        </div>
+        <br><br><br>
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-10">
+                <div class="card" >
+                    <h1 class="card-title" style="text-align: center;">Adivinha Número: Médio</h1>
+                    <h4 class="card-subtitle text-muted" style="text-align: center;">Este jogo consiste no usuário adivinhar um número. Médio.</h3><br>
+                    <img src="Imagens/fundo_adv_n.jpeg" class="img-thumbnail rounded mx-auto d-block" style=" width: 600px; height: 410px;"><br>
+                    <a href="Jogos/Adivinha_Número/adv_medio.html" class="btn btn-dark btn-lg" id="adv_i">JOGAR</a>
+                </div>
+            </div>
+        </div>
+        <br><br><br>
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-10">
+                <div class="card" >
+                    <h1 class="card-title" style="text-align: center;">Adivinha Número: Intermediário</h1>
+                    <h4 class="card-subtitle text-muted" style="text-align: center;">Este jogo consiste no usuário adivinhar um número. Intermediário.</h3><br>
+                    <img src="Imagens/fundo_adv_n.jpeg" class="img-thumbnail rounded mx-auto d-block" style=" width: 600px; height: 410px;"><br>
+                    <a href="Jogos/Adivinha_Número/adv_inter.html" class="btn btn-dark btn-lg" id="adv_d">JOGAR</a>
+                </div>
+            </div>
+        </div>
+        <br><br><br>
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-10">
+                <div class="card" >
+                    <h1 class="card-title" style="text-align: center;">Adivinha Número: Difícil</h1>
+                    <h4 class="card-subtitle text-muted" style="text-align: center;">Este jogo consiste no usuário adivinhar um número. Difícil.</h3><br>
+                    <img src="Imagens/fundo_adv_n.jpeg" class="img-thumbnail rounded mx-auto d-block" style=" width: 600px; height: 410px;"><br>
+                    <a href="Jogos/Adivinha_Número/adv_difi.html" class="btn btn-dark btn-lg" id="tibetano">JOGAR</a>
+                </div>
+            </div>
+        </div>
+        <br><br><br>
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-10">
+                <div class="card" >
+                    <h1 class="card-title" style="text-align: center;">Teste Tibetano</h1>
+                    <h4 class="card-subtitle text-muted" style="text-align: center;">Este jogo consiste em algumas perguntas capazes de definir sua personalidade.</h3><br>
+                    <img src="Imagens/fundo_tibetano.jpeg" class="img-thumbnail rounded mx-auto d-block" style=" width: 600px; height: 410px;"><br>
+                    <a href="Jogos/teste_tibetano.html" class="btn btn-dark btn-lg" id="desen">JOGAR</a>
+                </div>
+            </div>
+        </div>
+        <br><br><br>
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-10">
+                <div class="card">
+                    <h1 class="card-title" style="text-align: center;">Desenvolvedores</h1>
+                    <h4 class="card-subtitle text-muted" style="text-align: center;">Veja quem desenvolveu este site.</h4>
+                    <br>
+                    <a href="Jogos/desen.html" class="btn btn-dark btn-lg">VEJA</a>
+                </div>
+            </div>
+        </div>
+        <br><br><br>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
