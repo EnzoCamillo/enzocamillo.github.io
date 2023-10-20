@@ -5,12 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adivinha Número: Fácil</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+
     <link href="../../css/bootstrap.min.css" rel="stylesheet">
 
     <style>
         body{
-            background-image: url(../../Imagens/fundo_adv_n.jpeg);
-            background-repeat: no-repeat;
+            background-image: url(Imagens/fundo2.jpeg);
             background-size: cover;
         }
     </style>
@@ -24,9 +27,94 @@
             </div>
         </div>
     </div>
+    <br>
+    <div class="container" style="background-image: linear-gradient(to bottom right, rgb(255, 181, 70), rgb(131, 255, 255));">
+        <div class="row">
+            <div class="col-12 mx-auto d-block">
+                <h1 style="font-size: 60px; font-family: 'Lilita One', sans-serif; text-align: center; color: white; text-shadow: 5px 5px black;">Adivinha Número: Fácil</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <button class="btn btn-dark btn-lg mx-auto d-block" data-toggle="como_jogar" title="COMO JOGAR?" data-placement="bottom" data-content="Neste jogo será sorteado aleatoriamente um número, no qual você precisará adivinhar com alguns chutes,
+                eu irei dizer se você acertou ou se o número chutado é menor ou maior do que o sorteado.">Como Jogar?</button>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-12">
+                <h2 style="text-align: center;"> Se já entendeu como funciona, clique no botão abaixo!!</h2>
+            </div>
+            <br><br><br>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <button class="btn btn-dark btn-lg mx-auto d-block" onclick="jogo()">JOGAR AGORA!</button>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-12">
+                <h4 style="text-align: center; ">Número de 1 a 10</h4>
+            </div>
+        </div>
+        <br><br>
+    </div>
+
+    <script>
+        num = 0
+        num2 = 0
+        tent = 0
+        
+        function jogo(){
+            if (tent == 0)
+            {
+                num = Math.floor(Math.random() * 11)
+            }
+
+            num2 = prompt("Digite o seu palpite:")
+
+            if (parseInt(num2) < 0)
+            {
+                alert("Acho que você se enganou! Não coloque números negativos!")
+                jogo()
+            }
+
+            if(parseInt(num2).toString()=='NaN') 
+            {
+				alert('Digite um número válido');
+				jogo()
+				return false;
+			}
+
+            tent++
+
+            if(parseInt(num2) == num)
+            {
+                alert(`Você acertou na ${tent}ª tentativa!!`)
+                tent = 0
+            }
+            else if(parseInt(num2) < num)
+            {
+                alert("Não foi desta vez! Tente um número *Maior*.")
+                jogo()
+            }
+            else
+            {
+                alert("Não foi desta vez! Tente um número *Menor*.")
+                jogo()
+            }
+        }
+    </script>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="../../js/bootstrap.min.js"></script>
+
+    <script>
+        $(function () {
+            $('[data-toggle="como_jogar"]').popover()
+        })
+    </script>
 </body>
 </html>

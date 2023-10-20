@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivinha Imagem</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body{
+            background-image: url(Imagens/fundo1.jpeg);
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-2">
+                <br>
+                <a href="../../index.html" class="btn btn-dark">< Voltar</a>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="container" style="background-image: linear-gradient(to bottom right,red, black);">
+        <div class="row">
+            <div class="col-12">
+                <h1 style="text-align: center; font-size: 60px; color: rgb(255, 244, 244); text-shadow: 5px 5px black;; font-family: 'Lilita One', sans-serif;">Adivinha Imagem</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <button class="btn btn-dark btn-lg mx-auto d-block" data-toggle="como_jogar" title="COMO JOGAR?" data-placement="bottom" data-content="Neste jogo você escolherá um dos Heroís da imagem abaixo,
+                e eu irei adivilhar a imagem escolhida. Mais abaixo, possuem 4 Cards no qual o Heroí escolhido poderá estar ou não, caso ele esteja marque sim, caso não, apenas marque não ">Como Jogar?</button>
+            </div>
+        </div>
+        <br>
+        <form name="form_image">
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-10">
+                    <div class="card" style="border-color: black;">
+                        <h1 class="card-title" style="text-align: center; font-family: 'Lilita One', sans-serif;">Memorize Uma Carta</h1>
+                        <img src="Imagens/Card_Principal.jpeg" title="Role para baixo" class="img-fluid mx-auto d-block" style="width: 800px;">
+                        <br>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-10">
+                    <div class="card" style="border-color: black;">
+                        <h1 class="card-title" style="text-align: center;font-family: 'Lilita One', sans-serif;">Sua carta está neste Cartão?</h1>
+                        <img src="Imagens/Card_1.jpeg" title="Role para baixo" class="img-fluid mx-auto d-block" style="width: 750px;">
+                        <br>
+                        <div class="mx-auto d-block" style="font-size: 20px;">
+                            <input type="radio" id="sim1" value="sim" name="card1" style="width: 20px; height: 20px;">
+                            <label for="sim1">Sim</label>&nbsp;&nbsp;
+                            <input type="radio" id="nao1" value="nao" name="card1" style="width: 20px; height: 20px;" checked>
+                            <label for="nao1">Não</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-10">
+                    <div class="card" style="border-color: black;">
+                        <h1 class="card-title" style="text-align: center;font-family: 'Lilita One', sans-serif;">Sua carta está neste Cartão?</h1>
+                        <img src="Imagens/Card_2.jpeg" title="Role para baixo" class="img-fluid mx-auto d-block" style="width: 750px;">
+                        <br>
+                        <div class="mx-auto d-block" style="font-size: 20px;">
+                            <input type="radio" id="sim2" value="sim" name="card2" style="width: 20px; height: 20px;">
+                            <label for="sim2">Sim</label>&nbsp;&nbsp;
+                            <input type="radio" id="nao2" value="nao" name="card2" style="width: 20px; height: 20px;" checked>
+                            <label for="nao2">Não</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-10">
+                    <div class="card" style="border-color: black;" id="card3">
+                        <h1 class="card-title" style="text-align: center;font-family: 'Lilita One', sans-serif;">Sua carta está neste Cartão?</h1>
+                        <img src="Imagens/Card_3.jpeg" title="Role para baixo" class="img-fluid mx-auto d-block" style="width: 750px;">
+                        <br>
+                        <div class="mx-auto d-block" style="font-size: 20px;">
+                            <input type="radio" id="sim3" value="sim" name="card3" style="width: 20px; height: 20px;">
+                            <label for="sim3">Sim</label>&nbsp;&nbsp;
+                            <input type="radio" id="nao3" value="nao" name="card3" style="width: 20px; height: 20px;" checked>
+                            <label for="nao3">Não</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-10">
+                    <div class="card" style="border-color: black;">
+                        <h1 class="card-title" style="text-align: center;font-family: 'Lilita One', sans-serif;">Sua carta está neste Cartão?</h1>
+                        <img src="Imagens/Card_4.jpeg" title="Role para baixo" class="img-fluid mx-auto d-block" style="width: 750px;">
+                        <br>
+                        <div class="mx-auto d-block" style="font-size: 20px;">
+                            <input type="radio" id="sim4" value="sim" name="card4" style="width: 20px; height: 20px;">
+                            <label for="sim4">Sim</label>&nbsp;&nbsp;
+                            <input type="radio" id="nao4" value="nao" name="card4" style="width: 20px; height: 20px;" checked>
+                            <label for="nao4">Não</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-12">
+                    <button type="button" class="btn btn-dark btn-lg mx-auto d-block" onclick="respostas ()">Resultado</button><br>
+                    <script>
+                        function respostas (){
+                            
+                            var posicao = 0 
+
+                            var card1 = document.form_image.card1.value
+                            var card2 = document.form_image.card2.value
+                            var card3 = document.form_image.card3.value
+                            var card4 = document.form_image.card4.value
+
+                            if (card1 == "sim"){
+                                posicao += 1
+                            }
+                            if (card2 == "sim"){
+                                posicao += 2
+                            }
+                            if (card3 == "sim"){
+                                posicao += 8
+                            }
+                            if (card4 == "sim"){
+                                posicao += 4
+                            }
+
+                            if(posicao>0)
+                            {
+                                document.write('<center><div class="card" style="background-image: linear-gradient(to bottom right,red, black); border: 2px black; width: 470px; height: 720px;">')
+                                document.write(`<h1 style="font-family: 'Lilita One', sans-serif; color:white; text-shadow: 5px 5px black">A IMAGEM ESCOLHIDA FOI:</h1>`)
+                                if (posicao == 1) {document.write('<img  src="Imagens/1.jpeg" style="width: 450px; height: 600px">')}
+                                if (posicao == 2) {document.write('<img  src="Imagens/2.jpeg" style="width: 450px; height: 600px">')}
+                                if (posicao == 3) {document.write('<img  src="Imagens/3.jpeg" style="width: 450px; height: 600px">')}
+                                if (posicao == 4) {document.write('<img  src="Imagens/4.jpeg" style="width: 450px; height: 600px">')}
+                                if (posicao == 5) {document.write('<img  src="Imagens/5.jpeg" style="width: 450px; height: 600px">')}
+                                if (posicao == 6) {document.write('<img  src="Imagens/6.jpeg" style="width: 450px; height: 600px">')}
+                                if (posicao == 7) {document.write('<img  src="Imagens/7.jpeg" style="width: 450px; height: 600px">')}
+                                if (posicao == 8) {document.write('<img  src="Imagens/8.jpeg" style="width: 450px; height: 600px">')}
+                                if (posicao == 9) {document.write('<img  src="Imagens/9.jpeg" style="width: 450px; height: 600px">')}
+                                if (posicao == 10) {document.write('<img  src="Imagens/10.jpeg" style="width: 450px; height: 600px">')}
+                                if (posicao == 11) {document.write('<img  src="Imagens/11.jpeg" style="width: 450px; height: 600px">')}
+                                if (posicao == 12) {document.write('<img  src="Imagens/12.jpeg" style="width: 450px; height: 600px">')}
+                                if (posicao == 13) {document.write('<img  src="Imagens/13.jpeg" style="width: 450px; height: 600px">')}
+                                if (posicao == 14) {document.write('<img  src="Imagens/14.jpeg" style="width: 450px; height: 600px">')}
+                                if (posicao == 15) {document.write('<img  src="Imagens/15.jpeg" style="width: 450px; height: 600px">')}
+                                document.write('<br><br><a href=""><button style="border: 2px black;background-color: black; color:white; border-radius: 7px; height: 30px; width: 60px; font-size: 18px">Voltar</button></a>')
+                                document.write('</div> </center>')
+                                document.body.style.backgroundImage = "url('Imagens/fundo1.jpeg')"
+                            } else{
+                                alert("Você não escolheu nenhuma carta!")
+                            }
+                        }
+                    </script>
+                </div>
+            </div>
+        </form>
+    </div>
+    <br>
+
+    <script src=“
+    https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+
+    6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+
+    <script>
+        $(function () {
+            $('[data-toggle="como_jogar"]').popover()
+        })
+    </script>
+</body>
+</html>

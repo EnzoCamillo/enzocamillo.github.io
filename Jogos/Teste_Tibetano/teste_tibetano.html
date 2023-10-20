@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste Tibetano</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body{
+            background-image: url(Imagens/fundo5.jpeg);
+        }
+
+        input{
+            background-color: rgba(0, 0, 0, 0);
+            border: 3px solid black;
+            border-top: 0px;
+            border-left: 0px;
+            border-right: 0px;
+            color: white;
+            text-shadow: 2px 2px black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-2">
+                <br>
+                <a href="../../index.html#tibetano" class="btn btn-dark">< Voltar</a>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="container" style="background-image: linear-gradient(to bottom right, rgb(108, 131, 221), rgb(220, 220, 220));">
+        <div class="row">
+            <div class="col-11 mx-auto d-block">
+                <h1 style="font-size: 60px; font-family: 'Lilita One', sans-serif; text-align: center; color: white; text-shadow: 5px 5px black;">Teste Tibetano</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <button class="btn btn-dark btn-lg mx-auto d-block" data-toggle="como_jogar" title="COMO FUNCIONA?" data-placement="bottom" data-content="O Teste Tibetano consiste em um teste capaz de revelar a sua personalidade em apenas 3 perguntas, ajudando a entender os seus valores e prioridades.">Como Funciona?</button>
+            </div>
+        </div>
+        <br>
+        <form method="post" name="formtTibetano">
+            <div class="row">
+                <div class="col-11 mx-auto d-block" style="font-family: 'Lilita One', sans-serif;">
+                    <h2 style="color: white; text-shadow: 3px 3px black; text-align: justify;">1. Imagine os seguintes animais em sua frente: uma Vaca, uma Ovelha, um Tigre, um Cavalo e um Porco. Preencha a classificação abaixo com esses animais em uma ordem na qual você goste.</h2>
+                    <br>
+                    <h4 style="text-align: center; color: white; text-shadow: 2px 2px black;">1 - <input type="text" style="width: 260px;" id="q1_1"></h4>
+                    <h4 style="text-align: center; color: white; text-shadow: 2px 2px black;">2 - <input type="text" style="width: 260px;" id="q1_2"></h4>
+                    <h4 style="text-align: center; color: white; text-shadow: 2px 2px black;">3 - <input type="text" style="width: 260px;" id="q1_3"></h4>
+                    <h4 style="text-align: center; color: white; text-shadow: 2px 2px black;">4 - <input type="text" style="width: 260px;" id="q1_4"></h4>
+                    <h4 style="text-align: center; color: white; text-shadow: 2px 2px black;">5 - <input type="text" style="width: 260px;" id="q1_5"></h4>
+                </div>
+            </div>
+            <br><br>
+            <div class="row">
+                <div class="col-11 mx-auto d-block" style="font-family: 'Lilita One', sans-serif;">
+                    <h2 style="color: white; text-shadow: 3px 3px black; text-align: justify;">2. Dê um adjetivo para cada substantivo na lista abaixo. Utilize apenas um adjetivo por substantivo.</h2>
+                    <br>
+                    <h4 style="text-align: center; color: white; text-shadow: 2px 2px black;">O cão é <input type="text" style="width: 260px;" id="q2_1"></h4>
+                    <h4 style="text-align: center; color: white; text-shadow: 2px 2px black;">O gato é <input type="text" style="width: 260px;" id="q2_2"></h4>
+                    <h4 style="text-align: center; color: white; text-shadow: 2px 2px black;">O rato é <input type="text" style="width: 260px;" id="q2_3"></h4>
+                    <h4 style="text-align: center; color: white; text-shadow: 2px 2px black;">O café é <input type="text" style="width: 260px;" id="q2_4"></h4>
+                    <h4 style="text-align: center; color: white; text-shadow: 2px 2px black;">O mar é <input type="text" style="width: 260px;" id="q2_5"></h4>
+                </div>
+            </div>
+            <br><br>
+            <div class="row">
+                <div class="col-11 mx-auto d-block" style="font-family: 'Lilita One', sans-serif;">
+                    <h2 style="color: white; text-shadow: 3px 3px black; text-align: justify;">3. Pense em cinco pessoas que são importantes para sua vida. escolha uma cor da lista abaixo para cada uma das cinco pessoas.</h2>
+                    <br>
+                    <h4 style="text-align: center; color: white; text-shadow: 2px 2px black;">Amarelo - <input type="text" style="width: 260px;" id="q3_1"></h4>
+                    <h4 style="text-align: center; color: white; text-shadow: 2px 2px black;">Laranja - <input type="text" style="width: 260px;" id="q3_2"></h4>
+                    <h4 style="text-align: center; color: white; text-shadow: 2px 2px black;">Vermelho - <input type="text" style="width: 260px;" id="q3_3"></h4>
+                    <h4 style="text-align: center; color: white; text-shadow: 2px 2px black;">Branco - <input type="text" style="width: 260px;" id="q3_4"></h4>
+                    <h4 style="text-align: center; color: white; text-shadow: 2px 2px black;">Verde - <input type="text" style="width: 260px;" id="q3_5"></h4>
+                </div>
+            </div>
+            <br><br>
+            <div class="row">
+                <div class="col-12">
+                    <h5 style="text-align: center; font-family: 'Lilita One', sans-serif;">Assim que você clicar no botão de resultado, role a página para baixo e veja sua peronalidade.</h5>
+                    <a class="btn btn-dark btn-lg mx-auto d-block" onclick="resultado()" style="color: white;">Resultado</a>
+                </div>
+            </div>
+            <br>
+        </form>
+        <div class="row">
+            <div class="col-12 mx-auto d-block" style="font-family: 'Lilita One', sans-serif;">
+                <h1 id="result" style="text-align: center; color: black; text-shadow: 4px 4px white;"></h1>
+
+                <h2 id="t1" style="text-align: center; color: black; text-shadow: 3px 3px white;"></h2>
+                <h3 id="r1" style="text-align: center; color: white; text-shadow: 2px 2px black;"></h3>
+                <h3 id="r2" style="text-align: center; color: white; text-shadow: 2px 2px black;"></h3>
+                <h3 id="r3" style="text-align: center; color: white; text-shadow: 2px 2px black;"></h3>
+                <h3 id="r4" style="text-align: center; color: white; text-shadow: 2px 2px black;"></h3>
+                <h3 id="r5" style="text-align: center; color: white; text-shadow: 2px 2px black;"></h3>
+
+                <h2 id="t2" style="text-align: center; color: black; text-shadow: 3px 3px white;"></h2>
+                <h3 id="r6" style="text-align: center; color: white; text-shadow: 2px 2px black;"></h3>
+                <h3 id="r7" style="text-align: center; color: white; text-shadow: 2px 2px black;"></h3>
+                <h3 id="r8" style="text-align: center; color: white; text-shadow: 2px 2px black;"></h3>
+                <h3 id="r9" style="text-align: center; color: white; text-shadow: 2px 2px black;"></h3>
+                <h3 id="r10" style="text-align: center; color: white; text-shadow: 2px 2px black;"></h3>
+
+                <h2 id="t3" style="text-align: center; color: black; text-shadow: 3px 3px white;"></h2>
+                <h3 id="r11" style="text-align: center; color: white; text-shadow: 2px 2px black;"></h3>
+                <h3 id="r12" style="text-align: center; color: white; text-shadow: 2px 2px black;"></h3>
+                <h3 id="r13" style="text-align: center; color: white; text-shadow: 2px 2px black;"></h3>
+                <h3 id="r14" style="text-align: center; color: white; text-shadow: 2px 2px black;"></h3>
+                <h3 id="r15" style="text-align: center; color: white; text-shadow: 2px 2px black;"></h3>
+
+                <h4 id="jog_nov" style="text-align: center;"></h4>
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <script>
+        var z = 0 
+
+        function resultado()
+        {
+            if(z == 0)
+            {
+                var result = document.getElementById("result")
+                var t1 = document.getElementById("t1")
+                var t2 = document.getElementById("t2")
+                var t3 = document.getElementById("t3")
+
+                var r1 = document.getElementById("r1")
+                var r2 = document.getElementById("r2")
+                var r3 = document.getElementById("r3")
+                var r4 = document.getElementById("r4")
+                var r5 = document.getElementById("r5")
+                var r6 = document.getElementById("r6")
+                var r7 = document.getElementById("r7")
+                var r8 = document.getElementById("r8")
+                var r9 = document.getElementById("r9")
+                var r10 = document.getElementById("r10")
+                var r11 = document.getElementById("r11")
+                var r12 = document.getElementById("r12")
+                var r13 = document.getElementById("r13")
+                var r14 = document.getElementById("r14")
+                var r15 = document.getElementById("r15")
+
+                var aviso = document.getElementById("jog_nov")
+
+                var q1_1 = document.getElementById("q1_1").value
+                var q1_2 = document.getElementById("q1_2").value
+                var q1_3 = document.getElementById("q1_3").value
+                var q1_4 = document.getElementById("q1_4").value
+                var q1_5 = document.getElementById("q1_5").value
+
+                var q2_1 = document.getElementById("q2_1").value
+                var q2_2 = document.getElementById("q2_2").value
+                var q2_3 = document.getElementById("q2_3").value
+                var q2_4 = document.getElementById("q2_4").value
+                var q2_5 = document.getElementById("q2_5").value
+
+                var q3_1 = document.getElementById("q3_1").value
+                var q3_2 = document.getElementById("q3_2").value
+                var q3_3 = document.getElementById("q3_3").value
+                var q3_4 = document.getElementById("q3_4").value
+                var q3_5 = document.getElementById("q3_5").value
+
+                var a = false
+                if(q1_1 == q1_2 || q1_1 == q1_3 || q1_1 == q1_4 || q1_1 == q1_5 ) {a = true}
+                if(q1_2 == q1_1 || q1_2 == q1_3 || q1_2 == q1_4 || q1_1 == q1_5 ) {a = true}
+                if(q1_3 == q1_1 || q1_3 == q1_2 || q1_3 == q1_4 || q1_1 == q1_5 ) {a = true}
+                if(q1_4 == q1_1 || q1_4 == q1_2 || q1_4 == q1_3 || q1_1 == q1_5 ) {a = true}
+                if(q1_5 == q1_1 || q1_5 == q1_2 || q1_5 == q1_3 || q1_1 == q1_4 ) {a = true}
+
+                var b = false
+                if(q1_1.toUpperCase() != "VACA" && q1_1.toUpperCase() != "CAVALO" && q1_1.toUpperCase() != "PORCO" && q1_1.toUpperCase() != "OVELHA" && q1_1.toUpperCase() != "TIGRE") {b = true}
+                if(q1_2.toUpperCase() != "VACA" && q1_2.toUpperCase() != "CAVALO" && q1_2.toUpperCase() != "PORCO" && q1_2.toUpperCase() != "OVELHA" && q1_2.toUpperCase() != "TIGRE") {b = true}
+                if(q1_3.toUpperCase() != "VACA" && q1_3.toUpperCase() != "CAVALO" && q1_3.toUpperCase() != "PORCO" && q1_3.toUpperCase() != "OVELHA" && q1_3.toUpperCase() != "TIGRE") {b = true}
+                if(q1_4.toUpperCase() != "VACA" && q1_4.toUpperCase() != "CAVALO" && q1_4.toUpperCase() != "PORCO" && q1_4.toUpperCase() != "OVELHA" && q1_4.toUpperCase() != "TIGRE") {b = true}
+                if(q1_5.toUpperCase() != "VACA" && q1_5.toUpperCase() != "CAVALO" && q1_5.toUpperCase() != "PORCO" && q1_5.toUpperCase() != "OVELHA" && q1_5.toUpperCase() != "TIGRE") {b = true}
+
+                if(q1_1 == "" || q1_2 == "" || q1_3 == "" || q1_4 == "" || q1_5 == "" || q2_1 == "" || q2_2 == "" || q2_3 == "" || q2_4 == "" || q2_5 == "" || q3_1 == "" || q3_2 == "" || q3_3 == "" || q3_4 == "" || q3_5 == "")
+                {
+                    alert("Você esqueceu de preencher alguma coisa!")
+                }
+                else if (a == false && b == false)
+                {
+                    z = 1
+
+                    result.innerHTML += "RESULTADO<br>"
+
+                    t1.innerHTML += `Reposta 1 - A escolha da ordem dos animais indica suas prioridades na vida:<br>`
+
+                    if(q1_1.toUpperCase() == "VACA") {r1.innerHTML += `1 - Você escolheu ${q1_1.toUpperCase()}, que representa a sua CARREIRA.`}
+                    if(q1_1.toUpperCase() == "TIGRE") {r1.innerHTML += `1 - Você escolheu ${q1_1.toUpperCase()}, que representa a sua AUTOESTIMA.`}
+                    if(q1_1.toUpperCase() == "OVELHA") {r1.innerHTML += `1 - Você escolheu ${q1_1.toUpperCase()}, que representa o AMOR`}
+                    if(q1_1.toUpperCase() == "CAVALO") {r1.innerHTML += `1 - Você escolheu ${q1_1.toUpperCase()}, que representa a sua FAMÍLIA.`}
+                    if(q1_1.toUpperCase() == "PORCO") {r1.innerHTML += `1 - Você escolheu ${q1_1.toUpperCase()}, que representa o DINHEIRO.`}
+                    
+                    if(q1_2.toUpperCase() == "VACA") {r2.innerHTML += `2 - Você escolheu ${q1_2.toUpperCase()}, que representa a sua CARREIRA.`}
+                    if(q1_2.toUpperCase() == "TIGRE") {r2.innerHTML += `2 - Você escolheu ${q1_2.toUpperCase()}, que representa a sua AUTOESTIMA.`}
+                    if(q1_2.toUpperCase() == "OVELHA") {r2.innerHTML += `2 - Você escolheu ${q1_2.toUpperCase()}, que representa o AMOR`}
+                    if(q1_2.toUpperCase() == "CAVALO") {r2.innerHTML += `2 - Você escolheu ${q1_2.toUpperCase()}, que representa a sua FAMÍLIA.`}
+                    if(q1_2.toUpperCase() == "PORCO") {r2.innerHTML += `2 - Você escolheu ${q1_2.toUpperCase()}, que representa o DINHEIRO.`}
+
+                    if(q1_3.toUpperCase() == "VACA") {r3.innerHTML += `3 - Você escolheu ${q1_3.toUpperCase()}, que representa a sua CARREIRA.`}
+                    if(q1_3.toUpperCase() == "TIGRE") {r3.innerHTML += `3 - Você escolheu ${q1_3.toUpperCase()}, que representa a sua AUTOESTIMA.`}
+                    if(q1_3.toUpperCase() == "OVELHA") {r3.innerHTML += `3 - Você escolheu ${q1_3.toUpperCase()}, que representa o AMOR`}
+                    if(q1_3.toUpperCase() == "CAVALO") {r3.innerHTML += `3 - Você escolheu ${q1_3.toUpperCase()}, que representa a sua FAMÍLIA.`}
+                    if(q1_3.toUpperCase() == "PORCO") {r3.innerHTML += `3 - Você escolheu ${q1_3.toUpperCase()}, que representa o DINHEIRO.`}
+                    
+                    if(q1_4.toUpperCase() == "VACA") {r4.innerHTML += `4 - Você escolheu ${q1_4.toUpperCase()}, que representa a sua CARREIRA.`}
+                    if(q1_4.toUpperCase() == "TIGRE") {r4.innerHTML += `4 - Você escolheu ${q1_4.toUpperCase()}, que representa a sua AUTOESTIMA.`}
+                    if(q1_4.toUpperCase() == "OVELHA") {r4.innerHTML += `4 - Você escolheu ${q1_4.toUpperCase()}, que representa o AMOR`}
+                    if(q1_4.toUpperCase() == "CAVALO") {r4.innerHTML += `4 - Você escolheu ${q1_4.toUpperCase()}, que representa a sua FAMÍLIA.`}
+                    if(q1_4.toUpperCase() == "PORCO") {r4.innerHTML += `4 - Você escolheu ${q1_4.toUpperCase()}, que representa o DINHEIRO.`}
+
+                    if(q1_5.toUpperCase() == "VACA") {r5.innerHTML += `5 - Você escolheu ${q1_5.toUpperCase()}, que representa a sua CARREIRA.<br>`}
+                    if(q1_5.toUpperCase() == "TIGRE") {r5.innerHTML += `5 - Você escolheu ${q1_5.toUpperCase()}, que representa a sua AUTOESTIMA.<br>`}
+                    if(q1_5.toUpperCase() == "OVELHA") {r5.innerHTML += `5 - Você escolheu ${q1_5.toUpperCase()}, que representa o AMOR<br>`}
+                    if(q1_5.toUpperCase() == "CAVALO") {r5.innerHTML += `5 - Você escolheu ${q1_5.toUpperCase()}, que representa a sua FAMÍLIA.<br>`}
+                    if(q1_5.toUpperCase() == "PORCO") {r5.innerHTML += `5 - Você escolheu ${q1_5.toUpperCase()}, que representa o DINHEIRO.<br>`}
+                    
+                    t2.innerHTML += `Reposta 2 - Os adjetivos utilizados  nos revela o que pensamos sobre alguns aspectos da vida:<br>`
+
+                    r6.innerHTML += `${q2_1.toUpperCase()} - Esse adjetivo revela sua PERSONALIDADE.`
+                    r7.innerHTML += `${q2_2.toUpperCase()} - Esse adjetivo revela a PERSONALIDADE do seu GRANDE AMIGO.`
+                    r8.innerHTML += `${q2_3.toUpperCase()} - Esse adjetivo revela sobre o que você acha de seus INIMIGOS.`
+                    r9.innerHTML += `${q2_4.toUpperCase()} - Esse adjetivo revela o que você acha sobre seu CRUSH.`
+                    r10.innerHTML += `${q2_5.toUpperCase()} - Esse adjetivo revela sobre sua VIDA no geral.<br>`
+                    
+                    t3.innerHTML += `Reposta 3 - Essa pergunta indica o que as pessoas a quem a cor correspondeu significam para você:<br>`
+
+                    r11.innerHTML += `${q3_1.toUpperCase()} - Essa pessoa deixou uma marca muito importante na sua vida.`
+                    r12.innerHTML += `${q3_2.toUpperCase()} - Essa pessoa é considerada por você uma verdadeira amiga.`
+                    r13.innerHTML += `${q3_3.toUpperCase()} - Você gosta muito dessa pessoa.`
+                    r14.innerHTML += `${q3_4.toUpperCase()} - Essa pessoa é a sua alma gêmea.`
+                    r15.innerHTML += `${q3_5.toUpperCase()} - Essa pessoa sempre estará com você em sua vida.`
+
+                    aviso.innerHTML += `Se você quiser realizar o teste mais uma vez, aperte F5 ou saia e entre na página novamente.`
+                }
+                else if(a ==true)
+                {
+                    alert("Você repetiu algum dos animais na primeira questão!")
+                }
+                else
+                {
+                    alert("Algum animal selecionado na primeira questão não está entre os cinco ditos ou você digitou errado!")
+                }
+            }
+        }
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+
+    <script>
+        $(function () {
+            $('[data-toggle="como_jogar"]').popover()
+        })
+    </script>
+</body>
+</html>
