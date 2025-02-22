@@ -7,11 +7,15 @@ body {
 /* Fullscreen Header */
 .full-screen {
     height: 100vh;
-    background: #1a1a1a;
+    background: #13021b;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+}
+
+.full-screen > h1, .full-screen > p{
+    color: #6CD4FF;
 }
 
 /* Animações */
@@ -46,7 +50,7 @@ body {
 h2 {
     font-weight: bold;
     font-size: 2em;
-    color: #999999;
+    color: #6CD4FF;
 }
 
 h2::after {
@@ -54,7 +58,7 @@ h2::after {
     display: block;
     width: 60px;
     height: 4px;
-    background-color: #333333;
+    background-color: #bebebe;
     margin: 0.5em auto;
 }
 
@@ -74,25 +78,37 @@ h2::after {
 
 /* Botão */
 .btn-outline-light {
-    border: 2px solid #333333;
-    color: #b3b3b3;
+    border: 2px solid #6CD4FF;
+    color: #6CD4FF;
     transition: background-color 0.3s, color 0.3s;
 }
 
 .btn-outline-light:hover {
-    background-color: #333333;
-    color: #e6e6e6;
+    background-color: #beebff41;
+    color: #56ccff;
+    border: 2px solid #6CD4FF;
 }
+
+.btn-outline-light:active {
+    background-color: #beebff41;
+    color: #56ccff;
+    border: 2px solid #6CD4FF;
+}
+
 
 /* Footer */
 footer {
     font-size: 0.9em;
-    background-color: #0d0d0d;
+    background-color: #0f0216;
     color: #666666;
 }
 
+footer > p{
+    color: #6CD4FF;
+}
+
 #experiencia {
-    background-color: #1e1e1e;
+    background-color: #100118;
     padding: 3rem 0; /* Reduzido */
 }
 
@@ -100,4 +116,26 @@ footer {
 .img-size {
     height: 250px; /* Reduzido */
     object-fit: cover; /* Para manter a proporção */
+}
+
+.navbar{
+    font-size: 20px;
+    height: 80px;
+    background-color: #14021d;
+    
+}
+.nav-link, .navbar-brand{
+    color: #6CD4FF;
+}
+
+.nav-link:hover, .navbar-brand:hover{
+    color: #2884ac;
+}
+
+.certificados{
+    background-color: #14021d;
+}
+
+.card-body > h5{
+    color: #56ccff;
 }
